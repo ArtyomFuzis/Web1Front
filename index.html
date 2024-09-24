@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Лабораторная работа №1</title>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Лабораторная работа №1</h2>
+        <h4>Выполнил: Назин Артем Аркадьевич P3207, ИСУ: 365395, вариант: 365395</h4>
+    </header>
+    <table>
+        <tr>
+            <td>Выберите X:</td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">-5</span></div></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">-4</span></div></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">-3</span></div></td>
+            <td></td>
+            <td></td>
+            <td colspan="4" rowspan="7"><img src="img/graph.png"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">-2</span></div></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">-1</span></div></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">0</span></div></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">1</span></div></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">2</span></div></td>
+            <td><div class="check_x ctrl"><input class="ch" type="checkbox"><span class="check_txt">3</span></div></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Набирите Y:</td>
+            <td colspan="3"><input id="inp_y" type="text"></td>
+        </tr>
+        <tr>
+            <td>Выберите R:</td>
+            <td><div class="radio_r ctrl"><input class="rad" name="r" type="radio"><span class="radio_txt">1</span></div></td>
+            <td><div class="radio_r ctrl"><input class="rad" name="r" type="radio"><span class="radio_txt">1.5</span></div></td>
+            <td><div class="radio_r ctrl"><input class="rad" name="r" type="radio"><span class="radio_txt">2</span></div></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><div class="radio_r ctrl"><input class="rad" name="r" type="radio"><span class="radio_txt">2.5</span></div></td>
+            <td><div class="radio_r ctrl"><input class="rad" name="r" type="radio"><span class="radio_txt">3</span></div></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"><button id="submit" type="submit">Отправить</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3" ><div id = "row_res" hidden></div></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">
+                <div id="res_table_div">
+                    <table id="res_table">
+                        <thead>
+
+                        <td>X</td>
+                        <td>Y</td>
+                        <td>R</td>
+                        <td>Результат</td>
+                        </thead>
+                    </table>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</body>
+</html>
